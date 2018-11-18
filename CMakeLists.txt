@@ -8,6 +8,6 @@ include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
 
-add_executable(Heaps main.cpp)
+add_executable(Heaps main.cpp src/BinaryHeap/heap.h src/BinaryHeap/vector.h Tests/BinaryHeapTests/test.cpp)
 
 target_link_libraries(Heaps gtest gtest_main)

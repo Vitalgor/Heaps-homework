@@ -8,6 +8,6 @@ include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
 
 
-add_executable(Heaps main.cpp)
+add_executable(Heaps main.cpp src/FibonacciHeap/FibonacciHeap.h Tests/FibonacciHeapTests/test.cpp)
 
 target_link_libraries(Heaps gtest gtest_main)
